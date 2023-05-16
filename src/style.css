@@ -1,0 +1,66 @@
+
+
+
+body{
+    background: rgb(216, 227, 255)  
+}
+
+header{
+    text-align: center
+}
+
+.contenedorinicio {
+    background-color: rgb(187, 222, 245);
+    height: 14vh;
+    margin:2%;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+p{width: 60%;}
+
+.contenedormayor{
+    display: flex;
+    justify-content: space-around;
+}
+.contenedorcifrar{
+    background-color: rgba(54, 211, 231, 0.411);
+    height: 90vh;
+    margin:2%;
+    display: table-row;
+    justify-content: center;
+    text-align:center;
+}
+
+h1 {text-align:center;
+    font-family: 'Gideon Roman', cursive;}
+
+p{ 
+text-align: center;
+font-family: 'Ubuntu', sans-serif;
+}
+
+input{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #090231;
+}
+button{
+    text-align: center;
+}
+h2 {
+    font-family: 'Gideon Roman', cursive;
+    color: rgb(255, 255, 255);
+}
+.contendescifrar{
+    background-color: rgba(188, 50, 230, 0.411);
+    height: 90vh;
+    margin:2%;
+    display: table-row;
+    justify-content: center;
+    text-align:center;   
+}
+
+footer {
+    text-align: center;
+}

@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>¡Bienvenido a Mensajería Secreta!</h1>
+    <div class="contenedorinicio">
+      <p> Estamos listos para recibir tu mensaje de forma segura para que nadie más
+        pueda interceptarlo. Deslizaremos las letras en el orden del alfabeto y así,
+        de forma segura podrás compartir tu mensaje cifrado. </p>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+  </header>
+  <div class=" contenedormayor">
+    <form>
+    <div class="contenedorcifrar">
+
+      <img src="zhombre.jpg" aling="left" width="300" height="200">
+
+      <label for="string">
+        <h2>INSERTA AQUÍ TU MENSAJE:</h2>
+      </label>
+      <input type="text" id="string" name="input" required minlength="4" maxlength="60" size="62">
+
+      <label for="offset">
+        <h3>Elije el desplazamiento</h3>
+      </label>
+      <input type="number" id="offset" name="space" min="1" max="26">
+
+      <button type="button" id="encode">Cifrar</button>
+
+      <label for="output">
+        <h2>MIRA EL RESULTADO:</h2>
+      </label>
+      <p> <input type="text" id="output" required minlength="4" maxlength="60" size="62"> </p>
+    </div>
+
+    <div class="contendescifrar">
+
+      <img src="zmujer.jpg" aling="left" width="300" height="200">
+
+      <label for="string2">
+        <h2>DECIFRA TU MENSAJE:</h2>
+      </label>
+      <input type="text" id="string2" name="input2" required minlength="4" maxlength="60" size="62">
+
+      <label for="offset2">
+        <h3>Elije el desplazamiento</h3>
+      </label>
+      <input type="number" id="offset2" name="Space1" min="1" max="26">
+      <button type="button" id="decode">Descifrar</button>
+
+      <label for="output2">
+        <h2>MIRA EL RESULTADO:</h2>
+      </label>
+      <p> <input type="text" id="output2" required minlength="4" maxlength="60" size="62"> </p>
+    </div>
+    <input type="Reset" value="Borrar todo">
+  </form> 
+  </div>
+<footer>
+  Copyright © 2023 Mixi Cipher, Inc.
+</footer>
+
+  <script src="index.js"></script>
+  <script src="cipher.js"></script>
+
+</body>
+
 </html>
