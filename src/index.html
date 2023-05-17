@@ -22,56 +22,56 @@
         de forma segura podrás compartir tu mensaje cifrado. </p>
     </div>
   </header>
+  <form>
   <div class="contenedormayor">
-    <form>
-    <div class="contenedorcifrar">
 
-      <img src="zhombre.jpg" aling="left" width="300" height="200">
+      <div class="contenedorcifrar">
 
-      <label for="string">
-        <h2>INSERTA AQUÍ TU MENSAJE:</h2>
-      </label>
-      <input type="text" id="string" name="input" required minlength="4" maxlength="60" size="62">
+        <img src="zhombre.jpg" aling="left" width="300" height="200">
+        
+        <label for="string">
+          <h2>INSERTA AQUÍ TU MENSAJE:</h2>
+        </label>
+        <textarea type="text" id="string" name="input" required minlength="4" maxlength="67" size="70"> 
+        </textarea>
+        <label for="offset">
+          <h3>Elije el desplazamiento</h3>
+        </label>
+        <input type="number" id="offset" name="space" min="1" max="26">
 
-      <label for="offset">
-        <h3>Elije el desplazamiento</h3>
-      </label>
-      <input type="number" id="offset" name="space" min="1" max="26">
+        <button type="button" id="encode">Cifrar</button>
 
-      <button type="button" id="encode">Cifrar</button>
+        <label for="output">
+          <h2>MIRA EL RESULTADO:</h2>
+        </label>
+        <textarea type="text" id="output" required minlength="4" maxlength="67" size="70"> </textarea> 
+      </div>
 
-      <label for="output">
-        <h2>MIRA EL RESULTADO:</h2>
-      </label>
-      <p> <input type="text" id="output" required minlength="4" maxlength="60" size="62"> </p>
-    </div>
+      <div class="contendescifrar">
 
-    <div class="contendescifrar">
+        <img src="zmujer.jpg" aling="left" width="300" height="200">
 
-      <img src="zmujer.jpg" aling="left" width="300" height="200">
-
-      <label for="string2">
-        <h2>DECIFRA TU MENSAJE:</h2>
-      </label>
-      <input type="text" id="string2" name="input2" required minlength="4" maxlength="60" size="62">
-
-      <label for="offset2">
-        <h3>Elije el desplazamiento</h3>
-      </label>
-      <input type="number" id="offset2" name="Space1" min="1" max="26">
-      <button type="button" id="decode">Descifrar</button>
-
-      <label for="output2">
-        <h2>MIRA EL RESULTADO:</h2>
-      </label>
-      <p> <input type="text" id="output2" required minlength="4" maxlength="60" size="62"> </p>
-    </div>
-    <input type="Reset" value="Borrar todo">
-  </form> 
+        <label for="string2">
+          <h2>DECIFRA TU MENSAJE:</h2>
+        </label>
+        <textarea type="text" id="string2" name="input2" required minlength="4" maxlength="67" size="70">
+        </textarea>
+        <label for="offset2">
+          <h3>Elije el desplazamiento</h3>
+        </label>
+        <input type="number" id="offset2" name="Space1" min="1" max="26">
+        <button type="button" id="decode">Descifrar</button>
+        <label for="output2">
+          <h2>MIRA EL RESULTADO:</h2>
+        </label>
+        <textarea type="text" id="output2" required minlength="4" maxlength="67" size="70"> </textarea> 
+      </div>
+      <input type="Reset" value="Borrar todo">
   </div>
-<footer>
-  Copyright © 2023 Mixi Cipher, Inc.
-</footer>
+</form>
+  <footer>
+    Copyright © 2023 Mixi Cipher, Inc.
+  </footer>
 
   <script src="index.js"></script>
   <script src="cipher.js"></script>

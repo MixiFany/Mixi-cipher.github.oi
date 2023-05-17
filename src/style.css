@@ -11,7 +11,7 @@ header{
 
 .contenedorinicio {
     background-color: rgb(187, 222, 245);
-    height: 14vh;
+    height: 10vh;
     margin:2%;
     display: flex;
     justify-content: center;
@@ -23,10 +23,12 @@ p{width: 60%;}
     display: flex;
     justify-content: space-around;
 }
+
 .contenedorcifrar{
     background-color: rgba(54, 211, 231, 0.411);
     height: 90vh;
     margin:2%;
+    width: 80%;
     display: table-row;
     justify-content: center;
     text-align:center;
@@ -56,6 +58,7 @@ h2 {
     background-color: rgba(188, 50, 230, 0.411);
     height: 90vh;
     margin:2%;
+    width: 80%;
     display: table-row;
     justify-content: center;
     text-align:center;   
